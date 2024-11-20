@@ -39,11 +39,8 @@ def convert_voc_to_yolo(xml_folder, output_folder, classes):
         with open(output_txt_file, "w") as f:
             f.write("\n".join(yolo_format_lines))
 
-# Укажите ваши классы объектов (например, солнечные пятна и солнечные вспышки)
 classes = ["sunspots", "solar flares"]
 
-# Конвертация аннотаций для обучающего набора
 convert_voc_to_yolo("data/annotations/train/", "data/images/labeled/train/", classes)
 
-# Конвертация аннотаций для валидационного набора
 convert_voc_to_yolo("data/annotations/val/", "data/images/labeled/val/", classes)
