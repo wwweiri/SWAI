@@ -1,11 +1,9 @@
 venv/
 __pycache__/
-*.pyc
 .idea/
 .vscode/
 .DS_Store
 Thumbs.db
-*.log
 *.tmp
 
-!yolov5/*
+!yolov5/** */
