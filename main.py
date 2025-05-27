@@ -71,7 +71,7 @@ def data_generator(file_list, label_list, target_size=(128, 128)):
             yield image, label
 
 if __name__ == "__main__":
-    base_dir = "/mnt/remote_fits"  # Измените на актуальный путь
+    base_dir = "/mnt/remote_fits"
     target_size = (128, 128)
     batch_size = 64
     epochs = 1
